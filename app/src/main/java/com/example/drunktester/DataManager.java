@@ -31,4 +31,9 @@ public class DataManager {
     public String getVoiceFileName() {
         return voiceFileName;
     }
+
+    public void clearData() {
+        this.accelerometerData = null;
+        this.voiceFileName = null;
+    }
 }
