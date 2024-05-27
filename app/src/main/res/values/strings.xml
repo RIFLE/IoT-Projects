@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DrunkTester</string>
+    <string name="title_main">Drunk Tester</string>
+    <string name="start_test">Begin test</string>
+    <string name="version">v1.0</string>
+    <string name="title_accelerometer">Press for recording accelerometer data</string>
+    <string name="record_data">Record data</string>
+    <string name="duration">10 sec</string>
+    <string name="back">Back</string>
+    <string name="title_recording">Recording accelerometer data</string>
+    <string name="progress">Progress: %1$d/10 sec</string>
+    <string name="terminate">Terminate</string>
+</resources>
