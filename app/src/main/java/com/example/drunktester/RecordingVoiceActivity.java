@@ -102,5 +102,6 @@ public class RecordingVoiceActivity extends AppCompatActivity {
         terminateButton.setVisibility(Button.GONE);
         backButton.setVisibility(Button.VISIBLE);
         nextButton.setVisibility(Button.VISIBLE);
+        progressBar.setVisibility(ProgressBar.INVISIBLE);
     }
 }

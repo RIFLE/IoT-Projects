@@ -89,6 +89,8 @@ public class RecordingAccelerometerActivity extends AppCompatActivity implements
         terminateButton.setVisibility(Button.GONE);
         backButton.setVisibility(Button.VISIBLE);
         nextButton.setVisibility(Button.VISIBLE);
+
+        progressBar.setVisibility(ProgressBar.INVISIBLE);
     }
 
     @Override
