@@ -10,6 +10,8 @@ import com.example.alcotester.R;
 
 import java.util.List;
 
+import com.example.drunktester.VoiceAnalyzer;
+
 public class AnalyzeActivity extends AppCompatActivity {
 
     @Override
@@ -42,8 +44,11 @@ public class AnalyzeActivity extends AppCompatActivity {
     }
 
     private float analyzeData(List<float[]> accelerometerData, String voiceFileName) {
-        // Implement your analysis logic here
-        // For example, calculate the variance or some other metric
-        return 0; // Replace with actual result
+        // Compute the result
+        float acceleration_result = AccelerationAnalyzer.analyzeAcceleration(accelerometerData);
+
+        float voice_scale = VoiceAnalyzer.analyzeVoice(voiceFileName);
+
+        return voice_scale * 0.2f +  acceleration_result * 0.8f; // Replace with actual result
     }
 }

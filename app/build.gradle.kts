@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.github.wendykierp:JTransforms:3.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,4 +40,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }
