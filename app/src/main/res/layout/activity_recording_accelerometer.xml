@@ -1,47 +1,60 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/background_color"
+    tools:context=".RecordingAccelerometerActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recording accelerometer data"
-        android:textSize="18sp"
-        android:layout_gravity="center"
-        android:paddingBottom="16dp" />
+        android:text="Recording Accelerometer Data"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:layout_centerInParent="true" />
 
     <TextView
         android:id="@+id/progressText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Progress: 0/10 sec"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/terminateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Terminate"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/progressText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/terminateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:visibility="gone" />
 
     <Button
@@ -49,7 +62,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:visibility="gone" />
-</LinearLayout>
+</RelativeLayout>

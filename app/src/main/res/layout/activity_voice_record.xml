@@ -1,38 +1,51 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/background_color"
+    tools:context=".VoiceRecordActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press for recording voice data"
-        android:textSize="18sp"
-        android:layout_gravity="center"
-        android:paddingBottom="16dp" />
+        android:text="Press to Record Voice Data"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
 
     <Button
         android:id="@+id/recordVoiceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Record voice"
-        android:layout_gravity="center" />
+        android:text="Record Voice"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_centerInParent="true"
+        android:padding="12dp" />
 
     <TextView
         android:id="@+id/duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5 sec"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/recordVoiceButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
-</LinearLayout>
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/duration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
